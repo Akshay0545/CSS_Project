@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+}
+.galaxy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.planet-8{
+    margin-top: 60px;
+    width: 750px;
+    height: 750px;
+    border: 2px solid black;
+    border-radius: 50%;
+    animation: orbits 4s linear infinite ;
+    padding: 35px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.neptune {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(6, 41, 41);
+    border-radius: 50%;
+    /* animation: orbits 4s linear infinite; */
+}
+@keyframes orbits {
+    from{
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
